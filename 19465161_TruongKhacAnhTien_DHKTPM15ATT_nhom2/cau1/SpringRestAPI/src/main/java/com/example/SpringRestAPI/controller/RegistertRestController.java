@@ -26,4 +26,8 @@ public class RegistertRestController {
 	}
 	
 
+	@GetMapping("/registerts")
+	public List<User> getUsers() {
+		return registertService.getUsers();
+	}
 }
